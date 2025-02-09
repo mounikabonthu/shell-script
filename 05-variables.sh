@@ -1,6 +1,6 @@
 #!/bin/bash
 # user name and password concept
-echo "Please enter ypur username:"
+echo "Please enter your username:"
 read USERNAME
 echo "your username is $USERNAME"
 echo "enter your password :"
