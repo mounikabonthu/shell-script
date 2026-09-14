@@ -61,5 +61,5 @@ then
     fi
 
 else
-    echo -e "$R No files found older than $DAYS days $N"
+    echo -e "\033[31m No files found older than $DAYS days \033[0m"
 fi
