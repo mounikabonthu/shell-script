@@ -11,14 +11,5 @@ LOG_FILE=$(echo $0 | cut -d "." -f1 )
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
-sudo mkdir -p /var/log/shellscript-logs
+mkdir -p $LOGS_FOLDER
 
-VALIDATE(){
-    if [ $1 -ne 0 ]
-    then
-        echo -e "$2 ... $R FAILURE $N"
-        exit 1
-    else
-        echo -e "$2 ... $G SUCCESS $N"
-    fi
-}
