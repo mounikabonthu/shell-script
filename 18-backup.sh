@@ -19,7 +19,7 @@ USAGE(){
     echo -e "$R USAGE:: $N backup <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
     exit 1
 }
-echo " logfile name is $LOG_FILE"
+#echo " logfile name is $LOG_FILE"  #for my testing
 
 if [ $# -lt 2 ]
 then
